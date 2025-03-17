@@ -30,37 +30,22 @@
     align-items: flex-start;
     height: 100%;
 	width: 100%;
-    background-color: #f4f4f4;
+    background-color: #000000;
 
 }
 
+.container {
+			width: 100vw;
+			height: 100vh;
+			background-color: black;
+		}
 
-@media (max-width: 1024px) {
-    body {
-        font-size: 16px;
-    }
-}
+		.container>div>div:first-child {
+			background-color: black !important;
+		}
 
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-    #container {
-        width: 95vw;
-    }
-}
 
-@media (max-width: 480px) {
-    body {
-        font-size: 12px;
-    }
-    #container {
-        width: 100%;
-		max-width: 100%;
-		display: flex;
-		justify-content: top;
-    }
-}
+
 			h1 {
 				font-size: 18pt;
 			}
@@ -77,7 +62,7 @@
 		<br>
 		<script type="text/javascript" src="object2vr_player.js">
 		</script>
-		<div id="container" style="width:1920px;height:1200px; position: static;">
+		<div id="container" class="container">
 		This content requires HTML5 &amp; Javascript or Adobe Flash Player Version 9 or higher.
 		</div>
 		<script type="text/javascript">
